@@ -4,11 +4,11 @@ ACM-Game-Presentation
 This repository will contain a demonstration game as well as an accompanying tutorial on how to build a simple
 platformer game using impact.js. 
 
-NOTE: Impact.js game engine will not be distributed openly. Only members of the CCNY ACM Game Development club can 
-access the software for free. You may purchase your own copy [here](http://impactjs.com/).
+NOTE: Impact.js game engine is not included in this repository. Only members of the CCNY ACM Game Development club can 
+access the software for free, as given permission by [creator of ImpactJS](http://phoboslab.org/). You may purchase your own copy [here](http://impactjs.com/).
 
 Presentation 
------------------
+------------
 * Introduction to ImpactJS
     * Features 
     * Strengths 
@@ -55,4 +55,16 @@ Presentation
         * `update` function: Handle movement
         * `handleMovementTrace` function: Collision handling
         * `check` function: Apply damage based on collision
+
+Disclaimer
+----------
+This project is **purely for educational purposes**. As such, this is a **non-profit** project. The following media files are copyright of Nintendo:
+
+* Mario character graphics
+* Mushroom powerup image 
+* Goomba character graphics
+
+Foregounds and backgrounds are custom made assets. Media presented here are used **solely for sake of presentation**. 
+
+
 
