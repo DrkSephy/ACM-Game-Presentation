@@ -8,3 +8,4 @@
 \beamer@subsectionintoc {3}{3}{Draw Function}{13}{0}{2}
 \beamer@sectionintoc {4}{Starting your first game}{14}{0}{3}
 \beamer@subsectionintoc {4}{1}{main.js}{14}{0}{3}
+\beamer@subsectionintoc {4}{2}{player.js}{25}{0}{3}
