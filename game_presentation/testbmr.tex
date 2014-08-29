@@ -1,17 +1,18 @@
-\documentclass[]{beamer}
+\documentclass[red]{beamer}
 % Class options include: notes, notesonly, handout, trans,
 %                        hidesubsections, shadesubsections,
 %                        inrow, blue, red, grey, brown
+
 
 % Theme for beamer presentation.
 \usepackage{beamerthemesplit} 
 % Other themes include: beamerthemebars, beamerthemelined, 
 %                       beamerthemetree, beamerthemetreebars  
 
-\title{ImpactJS Presentation}    % Enter your title between curly braces
-\author{David Leonard}                 % Enter your name between curly braces
-\institute{City College of New York}      % Enter your institute name between curly braces
-\date{\today}                    % Enter the date or \today between curly braces
+\title{ImpactJS Presentation}    
+\author{David Leonard}                 
+\institute{City College of New York}      
+\date{\today}                   
 
 \begin{document}
 
@@ -24,31 +25,44 @@
 
 \section[Outline]{}
 
-% Creates table of contents slide incorporating
-% all \section and \subsection commands
-\begin{frame}
-  \tableofcontents
-\end{frame}
-
-
-\section{Simple slide with three points shown all at once}
+\section{ImpactJS and JavaScript Introduction}
 
 \begin{frame}
-  \frametitle{Simple slide with three points shown all at once}   % Insert frame title between curly braces
+  \frametitle{Why ImpactJS?}   % Insert frame title between curly braces
 
   \begin{itemize}
-  \item Point 1
-  \item Point 2
-  \item Point 3
+  \item Collision handling
+  \item Camera pluginss
+  \item Map Editor
+  \item Player Physics
+  \item Strong OOP Design
   \end{itemize}
 \end{frame}
-\note[enumerate]       % Add notes to yourself that will be displayed when
-{                      % typeset with the notes or notesonly class options
-\item Note for Point 1   
-\item Note for Point 2   
-}
 
-\subsection{Simple slide with three points shown in succession}
+\begin{frame}
+	\frametitle{JavaScript Types}
+	 \begin{itemize}
+  		\item<1-> strings : "Hello World"
+ 		\item<2-> number : var x = 45
+ 		\item<3-> boolean : var flip = true
+		\item<4-> array : var arr = [ 1, 2, 3, 4 ]
+		\item<5->object : person = \{ name: David, Age: 23 \}
+		\item<6->undefined : typeof person === undefined
+		\item<7->null : var x = null
+ 	 \end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{JavaScript Objects}
+	
+	
+	
+	
+\end{frame}
+	
+	
+
+\subsection{ImpactJS and JavaScript Introduction}
 
 \begin{frame}
   \frametitle{Simple slide with three points shown in succession}   % Insert frame title between curly braces
@@ -59,8 +73,7 @@
   \item<3-> Point 3
   \end{itemize}
 \end{frame}
-\note{Speak clearly}  % Add notes to yourself that will be displayed when
-                      % typeset with the notes or notesonly class options
+
 
 
 \section{Slide with two columns: items and a graphic}
