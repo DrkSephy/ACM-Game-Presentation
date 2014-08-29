@@ -1,4 +1,7 @@
 \BOOKMARK [2][]{Outline0.2}{ImpactJS and JavaScript Introduction}{}% 1
-\BOOKMARK [2][]{Outline0.3}{Understanding ImpactJS Game Loop}{}% 2
-\BOOKMARK [3][]{Outline0.3.1.14}{ImpactJS and JavaScript Introduction}{Outline0.3}% 3
-\BOOKMARK [2][]{Outline0.4}{Slide with two columns: items and a graphic}{}% 4
+\BOOKMARK [3][]{Outline0.2.1.2}{ImpactJS Strengths}{Outline0.2}% 2
+\BOOKMARK [3][]{Outline0.2.2.3}{JavaScript Types}{Outline0.2}% 3
+\BOOKMARK [2][]{Outline0.3}{Understanding ImpactJS Game Loop}{}% 4
+\BOOKMARK [3][]{Outline0.3.1.11}{Init Function}{Outline0.3}% 5
+\BOOKMARK [3][]{Outline0.3.2.12}{Update Function}{Outline0.3}% 6
+\BOOKMARK [3][]{Outline0.3.3.13}{Draw Function}{Outline0.3}% 7
