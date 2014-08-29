@@ -18,7 +18,7 @@
 \begin{document}
 
 \lstdefinelanguage{JavaScript}{
-  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break, this},
   keywordstyle=\color{blue}\bfseries,
   ndkeywords={class, export, boolean, throw, implements, import, this},
   ndkeywordstyle=\color{darkgray}\bfseries,
@@ -35,7 +35,7 @@
 \lstset{
    language=JavaScript,
    extendedchars=true,
-   basicstyle=\footnotesize\ttfamily,
+   basicstyle=\scriptsize\ttfamily,
    showstringspaces=false,
    showspaces=false,
    tabsize=2,
@@ -44,22 +44,60 @@
    captionpos=b
 }
 
+% Object code listing
 \defverbatim[colored]\lstI{
-	\begin{lstlisting}[caption=My Javascript Example]
-		Name.prototype = {
-  			methodName: function(params){
-    			// this is a comment
-    			if(this.confirmed != null && typeof(this.confirmed) == Boolean && this.confirmed == true){
-      				document.createElement('h3');
-      				$('#system').append("This looks great");
-      				return false;
-   			 } else {
-      				throw new Error;
-    				}
-  			}
-		}
+	\begin{lstlisting}
+		var person = {
+			name: David,
+			age: 23,
+			major: Computer Science
+		};
+		
+		person.name; // David
+		person.age; // 23
+		person.major; // Computer Science 
 	\end{lstlisting}
 }
+
+% Init function code listing
+\defverbatim[colored]\lstll{
+	\begin{lstlisting}
+	init: function(){
+		// Init function is only run once 
+		ig.input.bind( ig.KEY.LEFT_ARROW, 'left');
+		ig.input.bind( ig.KEY.RIGHT_ARROW, 'right');
+		ig.input.bind( ig.KEY.X, 'jump');
+	}
+	\end{lstlisting}
+}
+
+% Update function code listing
+\defverbatim[colored]\lstlll{
+	\begin{lstlisting}
+	update: function(){
+		// update is run once per frame
+		if( typeof player === undefined ){
+			var player = this.getEntitiesByType(EntityPlayer)[0];
+			this.screen.x = player.pos.x - ig.system.width/2;
+			this.screen.y = player.pos.y - ig.system.height/2;
+		}
+	}
+	\end{lstlisting}
+}
+
+% Draw function code listing
+\defverbatim[colored]\lstllll{
+	\begin{lstlisting}
+	draw: function(){
+		this.parent();
+		if(this.font){
+			var player = this.getEntitiesByType(EntityPlayer)[0];
+			this.font.draw('Health: ' + player.health, 50, 10, ig.Font.ALIGN.CENTER);
+		}
+	}
+	\end{lstlisting}
+}
+
 
 % Creates title page of slide show using above information
 \begin{frame}
@@ -90,6 +128,7 @@
   		\item<1-> strings : "Hello World"
  		\item<2-> number : var x = 45
  		\item<3-> boolean : var flip = true
+		\item<4-> function
 		\item<4-> array : var arr = [ 1, 2, 3, 4 ]
 		\item<5->object : person = \{ name: David, Age: 23 \}
 		\item<6->undefined : typeof person === undefined
@@ -100,11 +139,23 @@
 \begin{frame}
  	\frametitle{JavaScript Objects}
 		\lstI
-	
-	
+\end{frame}
 
+\section{Understanding ImpactJS Game Loop}
+\begin{frame}
+	\frametitle{Init Function}
+		\lstll
+\end{frame}
+
+\begin{frame}
+	\frametitle{Update Function}
+		\lstlll
 \end{frame}
 	
+\begin{frame}
+	\frametitle{Draw Function}
+		\lstllll
+\end{frame}
 
 \subsection{ImpactJS and JavaScript Introduction}
 
