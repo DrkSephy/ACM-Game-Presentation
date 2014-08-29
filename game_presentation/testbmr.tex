@@ -98,13 +98,107 @@
 	\end{lstlisting}
 }
 
+% Main.js module loading
+\defverbatim[colored]\lstlllll{
+    \begin{lstlisting}
+        ig.module(
+            'game.main'
+        )
+        .requires(
+            'impact.game',
+            'impact.debug.debug',
+            'game.levels.test',
+            'game.entities.player',
+            'game.entities.goomba'
+        )
+    \end{lstlisting}
+}
+
+% main.js .defines
+\defverbatim[colored]\lstllllll{
+    \begin{lstlisting}
+        .defines(function(){
+            MyGame = ig.Game.extend({
+
+            });
+
+            ig.main( '#canvas', MyGame, 60, 320, 240, 2 );
+            });
+        });
+    \end{lstlisting}
+}
+
+% main.js properties
+\defverbatim[colored]\lstlllllll{
+    \begin{lstlisting}
+        .defines(function(){
+            MyGame = ig.Game.extend({
+                font: new ig.Font('media/04b03.font.png'),
+                gravity: 300,
+            });
+
+            [ ... ]
+        });
+    \end{lstlisting}
+}
+
+% main.js init function
+\defverbatim[colored]\lstllllllll{
+    \begin{lstlisting}
+    MyGame = ig.Game.extend({
+        init: function(){
+            ig.input.bind( ig.KEY.LEFT_ARROW, 'left');
+            ig.input.bind( ig.KEY.RIGHT_ARROW, 'right');
+            ig.input.bind( ig.KEY.X, 'jump');
+            this.loadLevel( LevelTest );
+        }
+    });
+    \end{lstlisting}
+}
+
+% main.js update function
+\defverbatim[colored]\lstlllllllll{
+    \begin{lstlisting}
+    MyGame = ig.Game.extend({
+        init: [ ... ],
+
+        update: function(){
+            var player = this.getEntitiesByType( EntityPlayer )[0];
+            if( player ) {
+            this.screen.x = player.pos.x - ig.system.width/2;
+            this.screen.y = player.pos.y - ig.system.height/2;
+            }
+            this.parent();
+        },
+    });
+
+    \end{lstlisting}
+}
+
+% main.js draw function
+\defverbatim[colored]\lstllllllllll{
+    \begin{lstlisting}
+    MyGame = ig.Game.extend({
+        update: [ ... ],
+        draw: function(){
+            this.parent();
+            if(this.font){
+                var player = ig.game.getEntitiesByType('EntityPlayer')[0];
+                this.font.draw('Health: ' + player.health, 50, 10, ig.Font.ALIGN.CENTER);
+            }
+        },
+    });
+    \end{lstlisting}
+}
+
+
+
+
 
 % Creates title page of slide show using above information
 \begin{frame}
   \titlepage
 \end{frame}
-\note{Talk for 30 minutes} % Add notes to yourself that will be displayed when
-                           % typeset with the notes or notesonly class options
 
 \section[Outline]{}
 
@@ -164,6 +258,50 @@
 \begin{frame}
 	\frametitle{Draw Function}
 		\lstllll
+\end{frame}
+
+\section{Starting your first game}
+\subsection{main.js}
+\begin{frame}
+    \frametitle{main.js}
+    \begin{itemize}
+        \item<1-> Require all modules
+        \item<2-> Define game classes
+        \item<3-> Bind keys within Init()
+        \item<4-> Camera code, game logic within Update()
+        \item<5-> Draw images within Draw()
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Loading modules}
+        \lstlllll
+\end{frame}
+
+\begin{frame}
+    \frametitle{Define your game class}
+        \lstllllll
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Define properties}
+        \lstlllllll
+\end{frame}
+
+\begin{frame}
+    \frametitle{Init function}
+        \lstllllllll
+\end{frame}
+
+\begin{frame}
+    \frametitle{Update function}
+        \lstlllllllll
+\end{frame}
+
+\begin{frame}
+    \frametitle{Draw function}
+        \lstllllllllll
 \end{frame}
 
 \end{document}
