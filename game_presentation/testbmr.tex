@@ -5,9 +5,10 @@
 
 
 % Theme for beamer presentation.
-\usepackage{beamerthemesplit} 
+\usepackage{beamerthemetree} 
 % Other themes include: beamerthemebars, beamerthemelined, 
 %                       beamerthemetree, beamerthemetreebars  
+\usepackage{listings}
 
 \title{ImpactJS Presentation}    
 \author{David Leonard}                 
@@ -15,6 +16,50 @@
 \date{\today}                   
 
 \begin{document}
+
+\lstdefinelanguage{JavaScript}{
+  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+  keywordstyle=\color{blue}\bfseries,
+  ndkeywords={class, export, boolean, throw, implements, import, this},
+  ndkeywordstyle=\color{darkgray}\bfseries,
+  identifierstyle=\color{black},
+  sensitive=false,
+  comment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  commentstyle=\color{purple}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  morestring=[b]',
+  morestring=[b]"
+}
+
+\lstset{
+   language=JavaScript,
+   extendedchars=true,
+   basicstyle=\footnotesize\ttfamily,
+   showstringspaces=false,
+   showspaces=false,
+   tabsize=2,
+   breaklines=true,
+   showtabs=false,
+   captionpos=b
+}
+
+\defverbatim[colored]\lstI{
+	\begin{lstlisting}[caption=My Javascript Example]
+		Name.prototype = {
+  			methodName: function(params){
+    			// this is a comment
+    			if(this.confirmed != null && typeof(this.confirmed) == Boolean && this.confirmed == true){
+      				document.createElement('h3');
+      				$('#system').append("This looks great");
+      				return false;
+   			 } else {
+      				throw new Error;
+    				}
+  			}
+		}
+	\end{lstlisting}
+}
 
 % Creates title page of slide show using above information
 \begin{frame}
@@ -53,13 +98,12 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{JavaScript Objects}
+ 	\frametitle{JavaScript Objects}
+		\lstI
 	
 	
-	
-	
+
 \end{frame}
-	
 	
 
 \subsection{ImpactJS and JavaScript Introduction}
