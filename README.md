@@ -66,5 +66,10 @@ This project is **purely for educational purposes**. As such, this is a **non-pr
 
 Foregounds and backgrounds are custom made assets. Media presented here are used **solely for sake of presentation**. 
 
+Useful Links
+------------
+
+* (http://www.granneman.com/webdev/editors/sublime-text/top-features-of-sublime-text/quickly-insert-text-and-code-with-sublime-text-snippets/)[generate code snippets with shortcuts using Sublime Text]
+
 
 
