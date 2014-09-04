@@ -2,3 +2,10 @@ weltmeister.html
 lib/impact
 lib/weltmeister
 .DS_Store
+game_presentation/testbmr.log
+game_presentation/*.png
+game_presentation/testbmr.aux
+game_presentation/testbmr.nav
+game_presentation/testbmr.out
+game_presentation/testbmr.snm
+game_presentation/testbmr.toc
