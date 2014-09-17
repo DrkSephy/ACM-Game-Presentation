@@ -69,7 +69,7 @@ Foregounds and backgrounds are custom made assets. Media presented here are used
 Useful Links
 ------------
 
-* [http://www.granneman.com/webdev/editors/sublime-text/top-features-of-sublime-text/quickly-insert-text-and-code-with-sublime-text-snippets/](generate code snippets with shortcuts using Sublime Text)
+* [generate code snippets with shortcuts using Sublime Text](http://www.granneman.com/webdev/editors/sublime-text/top-features-of-sublime-text/quickly-insert-text-and-code-with-sublime-text-snippets/)
 
 
 
