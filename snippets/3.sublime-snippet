@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+this.addAnim('run', 0.10, [1, 0]);
+this.addAnim('jump', 1, [2]);
+this.addAnim('fall', 0.4, [2]);
+]]></content>
+    
+    <tabTrigger>3</tabTrigger>
+ 
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+ig.input.bind(ig.KEY.LEFT_ARROW, 'left');
+ig.input.bind(ig.KEY.RIGHT_ARROW, 'right');
+ig.input.bind(ig.KEY.X, 'jump');
+]]></content>
+    
+    <tabTrigger>4</tabTrigger>
+ 
+</snippet>
