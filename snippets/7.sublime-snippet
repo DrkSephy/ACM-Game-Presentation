@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+
+this.currentAnim.flip.x = this.flip;
+]]></content>
+    
+    <tabTrigger>7</tabTrigger>
+ 
+</snippet>

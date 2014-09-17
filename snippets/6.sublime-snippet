@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+update: function(){
+    // Add left/right movement logic
+    var accel = this.standing ? this.accelGround : this.accelAir;
+    if(ig.input.state('left')){
+        this.accel.x = -accel;
+        this.flip = false;
+    } else if(ig.input.state('right')){
+        this.accel.x = accel;
+        this.flip = true;
+    } else
+        this.accel.x = 0;
+        
+    this.parent();
+},
+]]></content>
+    
+    <tabTrigger>6</tabTrigger>
+ 
+</snippet>

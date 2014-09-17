@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+accelGround: 200,
+accelAir: 310,
+]]></content>
+    
+    <tabTrigger>5</tabTrigger>
+ 
+</snippet>
