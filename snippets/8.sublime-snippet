@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+// Jumping logic: CASE 1
+if(this.standing && ig.input.state('jump')){
+    if(this.vel.y == 0){
+        this.vel.y = -this.jump;
+        this.falling = false;
+    }
+}
+
+]]></content>
+    
+    <tabTrigger>8</tabTrigger>
+ 
+</snippet>
