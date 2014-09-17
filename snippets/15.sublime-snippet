@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+type: ig.Entity.TYPE.B, 
+checkAgainst: ig.Entity.TYPE.A,
+collides: ig.Entity.COLLIDES.PASSIVE, 
+
+]]></content>
+    
+    <tabTrigger>15</tabTrigger>
+ 
+</snippet>

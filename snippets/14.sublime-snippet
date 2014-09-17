@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+
+handleMovementTrace: function(res){
+    this.parent(res);
+    if(res.collision.x){
+        console.log(this.flip);
+        this.flip = !this.flip;
+        this.anims.crawl.flip.x = !this.flip;
+    }
+},
+]]></content>
+    
+    <tabTrigger>14</tabTrigger>
+ 
+</snippet>
