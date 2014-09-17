@@ -1,0 +1,27 @@
+<snippet>
+    <content><![CDATA[
+ig.module(
+    'game.entities.player'
+)
+.requires(
+    'impact.entity'
+)
+.defines(function(){
+    EntityPlayer = ig.Entity.extend({
+        animSheet: new ig.AnimationSheet('media/player.png', 16, 28),
+        size: {x: 16, y: 28},
+        flip: true,
+
+        init: function(x, y, settings){
+            this.parent(x, y, settings);
+            this.addAnim('idle', 1, [1]);
+            $1
+        },
+
+    });
+});
+]]></content>
+    
+    <tabTrigger>2</tabTrigger>
+ 
+</snippet>

@@ -1,0 +1,27 @@
+<snippet>
+    <content><![CDATA[
+ig.module(
+    'game.main'
+)
+.requires(
+    'impact.game',
+    'impact.debug.debug',
+    'game.levels.basic'
+)
+
+.defines(function(){
+    MyGame = ig.Game.extend({
+        init: function(){
+            $1
+            this.loadLevel(LevelBasic);
+        }
+        
+    });
+
+    ig.main('#canvas', MyGame, 60, 320, 240, 2);
+});
+]]></content>
+    
+    <tabTrigger>1</tabTrigger>
+ 
+</snippet>
