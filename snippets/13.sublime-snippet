@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+update: function(){
+    var xdir = this.flip ? -1:1;
+    this.vel.x = this.speed * xdir;
+    this.parent();
+},
+]]></content>
+    
+    <tabTrigger>13</tabTrigger>
+ 
+</snippet>

@@ -1,0 +1,26 @@
+<snippet>
+    <content><![CDATA[
+ig.module(
+    'game.entities.goomba'
+)
+.requires(
+    'impact.entity'
+)
+
+.defines(function(){
+    EntityGoomba = ig.Entity.extend({
+        animSheet: new ig.AnimationSheet('media/enemies/goomba.png', 25, 26),
+        size: {x: 22, y: 19},
+        flip: true,
+
+        init: function(x, y, settings){
+            this.parent(x, y, settings);
+            this.addAnim('crawl', 0.20, [0, 1]);
+        },
+    });
+});
+]]></content>
+    
+    <tabTrigger>12</tabTrigger>
+ 
+</snippet>
