@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+
+draw: function(){
+    this.parent();
+    if(this.font){
+        var player = ig.game.getEntitiesByType('EntityPlayer')[0];
+        this.font.draw('Health: ' + player.health, 50, 10, ig.Font.ALIGN.CENTER);
+    }
+}
+
+
+]]></content>
+    
+    <tabTrigger>18</tabTrigger>
+ 
+</snippet>

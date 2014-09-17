@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+
+collideWith: function(other, axis){
+    if(other instanceof EntityPlayer){
+        other.receiveDamage(1, this);
+    }
+},
+
+]]></content>
+    
+    <tabTrigger>17</tabTrigger>
+ 
+</snippet>

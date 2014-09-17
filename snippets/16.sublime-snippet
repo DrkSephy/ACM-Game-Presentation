@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+
+type: ig.Entity.TYPE.A,
+checkAgainst: ig.Entity.TYPE.NONE,
+collides: ig.Entity.COLLIDES.ACTIVE,
+
+
+]]></content>
+    
+    <tabTrigger>16</tabTrigger>
+ 
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+
+if(axis === 'y'){
+    this.kill();
+}
+else
+    other.receiveDamage(1, this);
+
+]]></content>
+    
+    <tabTrigger>19</tabTrigger>
+ 
+</snippet>
