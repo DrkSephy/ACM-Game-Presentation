@@ -70,6 +70,7 @@ Useful Links
 ------------
 
 * [generate code snippets with shortcuts using Sublime Text](http://www.granneman.com/webdev/editors/sublime-text/top-features-of-sublime-text/quickly-insert-text-and-code-with-sublime-text-snippets/)
+* [generate gifs from mov](https://gist.github.com/dergachev/4627207)
 
 
 
